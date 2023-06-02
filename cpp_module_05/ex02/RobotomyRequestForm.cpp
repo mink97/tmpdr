@@ -33,7 +33,7 @@ void RobotomyRequestForm::execute(Bureaucrat const & executor) const
 		throw GradeTooLowException();
 	std::srand(std::time(NULL));
 	double randNum = static_cast<double>(std::rand() % 10000) / 10000;
-	std::cout << randNum << std::endl;
+	// std::cout << randNum << std::endl;
 	if (randNum < 0.5)
 	{
 		std::cout << "Dr-r-r-r-r-r-r-r" << std::endl;
