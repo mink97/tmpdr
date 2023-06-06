@@ -58,10 +58,6 @@ void identify(Base& p)
 		std::cout << "It's actual type is C." << std::endl;
 	}
 	catch(const std::exception& e) {}
-
-
-
-
 }
 
 int main()

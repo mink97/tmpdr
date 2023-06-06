@@ -11,6 +11,7 @@ void iter(T* arr, std::size_t len, void (*func)(T&))
 		std::cout << i+1 << " : ";
 		func(arr[i]);
 	}
+	std::cout << std::endl;
 }
 
 template<typename T>
