@@ -13,6 +13,7 @@ class BitcoinExchange
 	private:
 		// static std::map<int, float> data;
 		static void decreaseDate(int& date);
+		static int checkDate(const std::string& date);
 
 	public:
 		BitcoinExchange();
@@ -21,7 +22,6 @@ class BitcoinExchange
 
 		BitcoinExchange&	operator=(const BitcoinExchange& ref);
 
-		static int checkDate(const std::string& date);
 		static void getData(const std::string& arg, std::map<int, float>& data);
 		static void getValue(const std::string& line, std::map<int, float>& data);
 

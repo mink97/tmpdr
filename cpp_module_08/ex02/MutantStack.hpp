@@ -69,7 +69,6 @@ template<typename T>
 typename MutantStack<T>::const_iterator MutantStack<T>::cend()
 {
 	return (this->c.cend());
-
 }
 
 template<typename T>

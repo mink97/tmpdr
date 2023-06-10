@@ -4,6 +4,8 @@
 #include <iostream>
 #include <vector>
 #include <exception>
+#include <ctime>
+#include <cstdlib>
 
 class Span {
 	private:
@@ -19,6 +21,7 @@ class Span {
 		Span&	operator=(const Span& ref);
 
 		void addNumber(int num);
+		void addRange(int num);
 		unsigned int shortestSpan();
 		unsigned int longestSpan();
 

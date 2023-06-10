@@ -48,6 +48,15 @@ void	Span::addNumber(int num)
 	_vec.push_back(num);
 }
 
+void	Span::addRange(int num)
+{
+	std::srand(std::time(NULL));
+	for (int i = 0; i < num; i++)
+	{
+		this->addNumber(std::rand());
+	}
+}
+
 unsigned int Span::shortestSpan()
 {
 	if (_vec.size() < 2)

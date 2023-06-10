@@ -1,10 +1,7 @@
-#include <ctime>
-#include <cstdlib>
 #include "Span.hpp"
 
 int main()
 {
-	std::srand(std::time(NULL));
 	Span sp = Span(10000);
 	try
 	{
@@ -23,10 +20,11 @@ int main()
 		std::cerr << e.what() << '\n';
 	}
 
-	for (int i = 0; i < 10000; i++)
-	{
-		sp.addNumber(std::rand());
-	}
+	sp.addRange(10000);
+	// for (int i = 0; i < 10000; i++)
+	// {
+	// 	sp.addNumber(std::rand());
+	// }
 	try
 	{
 		sp.addNumber(4);

@@ -87,7 +87,7 @@ void BitcoinExchange::getValue(const std::string& line, std::map<int, float>& da
 	std::string::size_type pos = line.find("|");
 	if (pos == std::string::npos)
 		throw BadInputException();
-	int date = BitcoinExchange::checkDate(line.substr(0, pos));
+	int date = checkDate(line.substr(0, pos));
 	double value = strtod(line.substr(pos + 1).c_str(), &endpoint);
 	if (value <= 0)
 		throw std::runtime_error("Error: not a positive number.");
